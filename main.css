@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+/* Re-usable Starts Here */
+a{
+    text-decoration: none;
+}
+
+.btn{
+    border: 2px solid tomato;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--main-color);
+    background: var(--white-color);
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    border: 3px solid var(--white-color);
+    background: transparent;
+    color: var(--white-color);
+}
+
+button{
+    height: 50px;
+    width: 170px;
+    /* outline: none; */
+    /* padding: 18px 10px; */
+}
+/* Re-usable Ends Here */
+
+
+/* Header Section Starts Here */
+
+
+.header__section{
+    border: 3px solid blue;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header__nav{
+border: 3px solid black;
+display: flex;
+justify-content: space-between;
+padding: 0 20px;
+}
+
+.header__nav-explorer{
+    border: 3px solid orangered;
+    
+}
+
+.header__nav-linkholder{
+    width: 50%;
+    display: flex;
+
+}
+
+.header__nav-linkholder ul{
+    border: 3px solid green;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.header__nav-linkholder li{
+    border: 3px solid gold;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.header__nav-textholder{
+    width: 50%;
+    height: 250px;
+    
+}
+/* Header Section Ends Here */
+
+/* About Our Explore Starts Here */
+
+.explore__aboutus{
+    /* width: 90%;
+    margin: 0 auto; */
+    /* border: 3px solid yellow; */
+    padding: 60px 20px;
+
+}
+
+.explore__aboutus-content1{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.explore__aboutus-content2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+.explore__aboutus-content-text{
+    /* border: 3px solid blue; */
+    background: var(--main-color);
+    color: var(--white-color);
+    height: 280px;
+    width: 340px;
+    border-radius: 20px;
+}
+
+.explore__aboutus-content-text:hover{
+    box-shadow: 7px 11px 20px -10px rgba(0, 0, 0, 0.33);
+}
+
+.explore__aboutus-content-text h2{
+    padding: 20px 40px;
+    font-size: 35px;
+    font-weight: bolder;
+    line-height: 38px;
+}
+
+.explore__aboutus-content-text p{
+    padding: 10px 40px;
+    line-height: 20px;
+
+}
+.explore__aboutus-content-text button{
+    margin: 20px 40px;
+}
+/* About Our Explore Ends Here */
+
+/*Explore Section Starts Here  */
+
+.explore__section{  
+    /* border: 3px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: tomato;
+    padding-top: 30px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.explore__text-holder{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+/*Explore Section Ends Here  */
+
+/* Footer Section Starts Here */
+
+footer{
+   /* border: 3px solid tomato; */
+   background: var(--black-color);
+}
+
+.footer__section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.footer__text-holder{
+    color: var(--white-color);
+}
+
+.footer__text-holder:hover{
+    color: var(--black-color);
+    background: var(--white-color);
+}
+
+.footer__icon-holder span{
+    padding-left: 5px;
+}
+
+.footer__icon-holder a{
+    font-size: 20px;
+    color: var(--white-color);
+    text-decoration: none;
+    
+}
+.footer__icon-holder a:hover{
+    color: black;
+    background: var(--white-color);
+}
+
+
+/* Footer Section Ends Here */
