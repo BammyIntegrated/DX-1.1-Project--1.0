@@ -4,8 +4,6 @@ var backdrop = document.querySelector('.backdrop')
 
 
 
-
-
 function Addclass (){
     hamburger.classList.toggle('display')
     mobilelink.classList.toggle('displaylinks')

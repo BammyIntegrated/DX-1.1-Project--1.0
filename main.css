@@ -58,18 +58,20 @@ button{
     width: 100%;
     height: 100%;
     background: var(--light-text-color);
+    display: none;
 }
 /* Backdrop Ends Here*/
 
 /* Mobile Header Section Ends Here */
 
 .mobile__header__section{
-    border: 3px solid yellowgreen;
+    /* border: 3px solid yellowgreen; */
     display: none;
     justify-content: space-between;
     align-items: center;
     background: var(--main-color);
     padding: 10px 20px;
+
 }
 
 .mobile__header__nav-explorer a{
@@ -81,7 +83,7 @@ button{
 .mobile__header__nav-linkholder{
     background: var(--main-color);
     width: 55%;
-    height: 100vh;
+    /* height: 100vh; */
     position: fixed;
     top: 0;
     right: 0;
@@ -93,6 +95,7 @@ button{
 }
  
 /* Hamburger Menu Starts Here */
+
 .hamburger__menu{
     /* border: 3px solid var(--white-color); */
     height: 25px;
@@ -100,7 +103,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .menubars{
@@ -133,12 +136,12 @@ button{
 }
 .display .menubars::before{
     transform: rotate(45deg);
-    background: var(--white-color);
+    background: var(--main-color);
 }
 
 .display .menubars::after{
     transform: rotate(-45deg);
-    background: var(--white-color);
+    background: var(--main-color);
 }
 
 .mobile__header__nav-linkholder li{
@@ -147,11 +150,11 @@ button{
 
 .mobile__links{
     display: block;
-    border: 3px solid white;
+    /* border: 3px solid white; */
     text-decoration: none;
-    padding: 30px;
+    padding: 15px;
     color: var(--white-color);
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     justify-content: center;
     align-items: center;
@@ -161,6 +164,11 @@ button{
 .mobile__links:focus{
     color: var(--main-color);
     background: var(--white-color);
+}
+
+.activelinks{
+    background: var(--white-color);
+    color: var(--main-color);
 }
 
 
@@ -174,7 +182,7 @@ button{
 .header__section{
     /* border: 3px solid green; */
     /* display: flex; */
-    padding: 40px 20px;
+    padding: 30px 20px;
     width: 100%;
     height: 600px;
     background: linear-gradient(0deg, rgba(255, 99, 71, 0.2), rgba(255, 99, 71, 0.25)), url('./header.jpg');
@@ -185,12 +193,15 @@ button{
 }
 
 .desktop__header-nav{
+    /* border: 3px solid gray; */
     display: flex;
+    /* width: 100%;
+    height: 100%; */
 }
 
 .header__nav-explorer{
     /* border: 3px solid yellow; */
-    width: 55%;   
+    width: 55%;  
 }
 
 .header__nav-explorer a{
@@ -205,13 +216,12 @@ button{
 
 .header__nav-linkholder{
     /* border: 3px solid tomato; */
-    width: 45%;    
+    width: 45%;  
 }
 
 .header__nav-linkholder ul{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 40px;
 }
 
 .header__nav-linkholder li{
@@ -230,10 +240,13 @@ button{
 }
 
 .header__textholder{
+    /* border: 3px solid tomato; */
     width: 45%;
+    height: 100%;
     text-align: justify;
     float: right;
-    padding: 60px 20px;
+    padding: 20px;
+    padding-top: 80px;
 }
 
 .header__textholder h1{
@@ -242,16 +255,16 @@ button{
 }
 
 .header__textholder p{
-    line-height: 40px;
+    line-height: 30px;
     font-size: 25px;
     padding: 20px 0;
     text-align: justify;
     color: var(--white-color);
-
 }
 
 .header__textholder button{
     margin: 30px 0;
+
 }
 
 .header__textholder span{
@@ -319,15 +332,12 @@ button{
     justify-content: space-between;
     align-items: center;
     background: var(--main-color);
-    padding-top: 30px;
-    padding-bottom: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 25px;
 
 }
 
 .explore__text-holder{
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--white-color);
@@ -344,7 +354,6 @@ footer{
 
 .footer__section{
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
     padding: 10px 25px;
