@@ -8,50 +8,76 @@
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 
 <body>
+    <div class="backdrop" onclick="Addclass()"></div>
+
     <header>
 
         <!-- Header Section Starts Here -->
-        <div class="header__section">
-            <div class="header__nav">
+        <nav class="mobile__header__section">
 
-                <div class="header__nav-explorer">
-                    <a href="">EXPLORER</a>
+            <div class="mobile__header__nav-explorer">
+                    <a href="#explore__us">EXPLORER</a>
                     </div>
-                    <div class="header__nav-linkholder">
+
+                    <div class="hamburger__menu" onclick="Addclass()">
+
+                        <div class="menubars"></div>
+
+                    </div>
+
+                    <div class="mobile__header__nav-linkholder">
                     <ul>
-                        <!-- <a href=""><li style="float: left;">EXPLORER</li></a> -->
-                       <li> <a href="">HOME</a> </li>
-                       <li> <a href="">ABOUT</a> </li>
-                       <li> <a href="">CONTACT</a> </li>
+                       <li> <a href="#" class="mobile__links">HOME</a> </li>
+                       <li> <a href="#about__us" class="mobile__links">ABOUT</a> </li>
+                       <li> <a href="#contact__us" class="mobile__links">CONTACT</a> </li>
                         
                     </ul>
                     </div>
-            </div>  
 
-            <div class="header__nav-textholder">
-                <h1>
-                    EXPLORE THE WORLD
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos
-                    odit incidunt reiciendis officia explicabo sint, magnam ex laboriosam vel sed eligendi architecto? At iusto nesciunt, quod est assumenda cupiditate! Lorem ipsum dolor sit amet consecteturadipisicing elit.
-                </p>
+        </nav>
 
-                <button>Learn More<span><i class="fa-solid fa-arrow-right-long"></i></span></button>
+        <nav class="header__section">
+            <div class="desktop__header-nav">
+                <div class="header__nav-explorer">
+                    <a href="#explore__us">EXPLORER</a>
+                </div>
+                    <div class="header__nav-linkholder">
+                    <ul>
+                        <!-- <a href=""><li style="float: left;">EXPLORER</li></a> -->
+                       <li> <a href="#">HOME</a> </li>
+                       <li> <a href="#about__us">ABOUT</a> </li>
+                       <li> <a href="#contact__us">CONTACT</a> </li>
+                        
+                    </ul>
+                    </div>
+            </div>
 
-             </div>
+                    <div class="header__textholder">
+                    <h1>
+                        EXPLORE THE WORLD
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos
+                        odit incidunt reiciendis officia explicabo sint, magnam ex laboriosam vel sed eligendi architecto? At iusto nesciunt, quod est assumenda cupiditate! Lorem ipsum dolor sit amet consecteturadipisicing elit.
+                    </p>
+    
+                    <button class="btn-main">Learn More<span><i class="fa-solid fa-arrow-right-long"></i></span></button>
+    
 
-        </div>
+                    </div>
+
+        </nav>
         <!-- Header Section Ends Here -->
 
     </header>
 
     <main>
         <!-- About our explore Starts Here -->
-        <div class="explore__aboutus">
+        <div class="explore__aboutus" id="about__us">
 
             <div class="explore__aboutus-content1">
                 <div class="explore__aboutus-content-text">
@@ -126,7 +152,7 @@
         <!-- About our explore Ends Here -->
 
         <!-- Explore Section Starts Here -->
-        <div class="explore__section">
+        <div class="explore__section" id="explore__us">
             <div class="explore__text-holder">
                 explore
             </div>
@@ -140,7 +166,7 @@
             <div class="footer__text-holder">
                <Strong> &copy; 2022 Explorer, Built for Xeraxlabs Internship</Strong>
             </div>
-            <div class="footer__icon-holder">
+            <div class="footer__icon-holder" id="contact__us">
                 <span> 
                     <a href="" target="_blank">
                         <i class="fa-brands fa-linkedin-in"></i>

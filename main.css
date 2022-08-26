@@ -11,6 +11,21 @@ a{
     text-decoration: none;
 }
 
+.btn-main:hover{
+    background: transparent;
+    border: 3px solid var(--white-color);
+}
+
+.btn-main{
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--white-color);
+    background: var(--main-color);
+    margin-left: 15px;
+
+}
 .btn{
     border: 2px solid tomato;
     border-radius: 20px;
@@ -35,65 +50,221 @@ button{
 }
 /* Re-usable Ends Here */
 
+/* Backdrop Starts Here*/
+.backdrop{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--light-text-color);
+}
+/* Backdrop Ends Here*/
+
+/* Mobile Header Section Ends Here */
+
+.mobile__header__section{
+    border: 3px solid yellowgreen;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--main-color);
+    padding: 10px 20px;
+}
+
+.mobile__header__nav-explorer a{
+    color: var(--white-color);
+    font-size: 25px;   
+}
+
+
+.mobile__header__nav-linkholder{
+    background: var(--main-color);
+    width: 55%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.displaylinks{
+    display: block;
+}
+ 
+/* Hamburger Menu Starts Here */
+.hamburger__menu{
+    /* border: 3px solid var(--white-color); */
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.menubars{
+    height: 3px;
+    width: 100%;
+    background: var(--white-color);
+    position: relative;
+}
+
+.menubars::before,
+.menubars::after{
+    content: '';
+    height: 3px;
+    background: var(--white-color);
+    width: 100%;
+    position: absolute;
+}
+
+.menubars::before{
+    transform: translateY(-10px);
+}
+
+.menubars::after{
+    transform: translateY(10px);
+
+}
+
+.display .menubars{
+    background: transparent;
+}
+.display .menubars::before{
+    transform: rotate(45deg);
+    background: var(--white-color);
+}
+
+.display .menubars::after{
+    transform: rotate(-45deg);
+    background: var(--white-color);
+}
+
+.mobile__header__nav-linkholder li{
+    list-style: none;
+}
+
+.mobile__links{
+    display: block;
+    border: 3px solid white;
+    text-decoration: none;
+    padding: 30px;
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile__links:hover,
+.mobile__links:focus{
+    color: var(--main-color);
+    background: var(--white-color);
+}
+
+
+/* Hamburger Menu Ends Here */
+
+/* Mobile Header Section Ends Here */
+
 
 /* Header Section Starts Here */
 
-
 .header__section{
-    border: 3px solid blue;
-    display: flex;
-    flex-direction: column;
-
+    /* border: 3px solid green; */
+    /* display: flex; */
+    padding: 40px 20px;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(0deg, rgba(255, 99, 71, 0.2), rgba(255, 99, 71, 0.25)), url('./header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
 }
 
-.header__nav{
-border: 3px solid black;
-display: flex;
-justify-content: space-between;
-padding: 0 20px;
+.desktop__header-nav{
+    display: flex;
 }
 
 .header__nav-explorer{
-    border: 3px solid orangered;
-    
+    /* border: 3px solid yellow; */
+    width: 55%;   
+}
+
+.header__nav-explorer a{
+    color: var(--white-color);
+    font-size: 25px;
+}
+
+.header__nav-explorer a:hover{
+    border: 3px solid var(--white-color);
+    color: var(--black-color);
 }
 
 .header__nav-linkholder{
-    width: 50%;
-    display: flex;
-
+    /* border: 3px solid tomato; */
+    width: 45%;    
 }
 
 .header__nav-linkholder ul{
-    border: 3px solid green;
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: space-between;
+    padding-bottom: 40px;
 }
 
 .header__nav-linkholder li{
-    border: 3px solid gold;
     list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    
+    color: var(--white-color);
 }
 
-.header__nav-textholder{
-    width: 50%;
-    height: 250px;
+.header__nav-linkholder a{
+    color: var(--white-color);
+    font-size: 25px;
+}
+
+.header__nav-linkholder a:hover{
+    border: 3px solid var(--white-color);
+    color: var(--black-color);
+}
+
+.header__textholder{
+    width: 45%;
+    text-align: justify;
+    float: right;
+    padding: 60px 20px;
+}
+
+.header__textholder h1{
+    font-size: 25px;
+    color: var(--white-color);
+}
+
+.header__textholder p{
+    line-height: 40px;
+    font-size: 25px;
+    padding: 20px 0;
+    text-align: justify;
+    color: var(--white-color);
+
+}
+
+.header__textholder button{
+    margin: 30px 0;
+}
+
+.header__textholder span{
     
+    padding-left: 5px;
 }
 /* Header Section Ends Here */
 
 /* About Our Explore Starts Here */
 
 .explore__aboutus{
-    /* width: 90%;
-    margin: 0 auto; */
     /* border: 3px solid yellow; */
     padding: 60px 20px;
-
 }
 
 .explore__aboutus-content1{
@@ -106,6 +277,7 @@ padding: 0 20px;
 .explore__aboutus-content2{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding-top: 40px;
 }
 
@@ -146,7 +318,7 @@ padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: tomato;
+    background: var(--main-color);
     padding-top: 30px;
     padding-bottom: 8px;
     padding-left: 20px;
@@ -172,13 +344,16 @@ footer{
 
 .footer__section{
     display: flex;
+    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
     padding: 10px 25px;
+    cursor: pointer;
 }
 
 .footer__text-holder{
     color: var(--white-color);
+    
 }
 
 .footer__text-holder:hover{
@@ -194,6 +369,7 @@ footer{
     font-size: 20px;
     color: var(--white-color);
     text-decoration: none;
+    
     
 }
 .footer__icon-holder a:hover{

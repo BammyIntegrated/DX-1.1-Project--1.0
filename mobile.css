@@ -1,0 +1,65 @@
+/* Mobile Screen View */
+
+@media screen and (max-width:900px) {
+.desktop__header-nav{
+        display: none;
+}
+
+.mobile__header__section{
+        display: flex;
+}
+/* Mobile Header Section Starts Here */
+
+
+
+/* Mobile Header Section Ends Here */
+
+/* About our Explore Starts Here */
+.explore__aboutus-content1{
+    flex-direction: column;
+    
+}   
+
+.explore__aboutus-content2{
+    flex-direction: column;
+    padding-top: unset;
+}
+
+.explore__aboutus-content-text{
+    margin: 20px 0;
+}
+/* About our Explore Ends Here */
+    
+/* Explore Section Starts Here */
+
+.explore__section{
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.explore__section button {
+    margin: 15px 0;
+}
+
+/* Explore Section Ends Here */
+
+
+/* Mobile Footer Section Starts Here */
+
+
+.footer__section{
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.footer__text-holder{
+    text-align: center;
+
+}
+.footer__icon-holder{
+    padding-top: 10px;
+}
+/* Mobile Footer Section Ends Here */
+
+
+
+}
